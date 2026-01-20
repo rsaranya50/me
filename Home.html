@@ -1,293 +1,112 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Enmark Energy Private Limited</title>
-
+<title>Enmark Power – Powering Tomorrow's Industries</title>
 <style>
-* {box-sizing: border-box;}
-body {
-  margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
-  background: #f7f9fc;
-  color: #333;
-}
-
-/* Header */
-header {
-  background: linear-gradient(120deg, #003366, #0059b3);
-  color: #fff;
-  padding: 28px 64px;
-}
-header h1 {margin: 0; font-size: 38px;}
-nav {margin-top: 12px;}
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin-right: 24px;
-  font-weight: 600;
-}
-
-/* Hero */
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url("https://images.unsplash.com/photo-1581092334651-ddf26d9b66b7") center/cover no-repeat;
-  padding: 180px 64px;
-  color: #fff;
-  text-align: center;
-}
-.hero h2 {
-  font-size: 50px;
-  max-width: 900px;
-  margin: auto;
-}
-.hero p {
-  font-size: 20px;
-  max-width: 800px;
-  margin: 20px auto 0;
-  line-height: 1.8;
-}
-
-/* Section */
-.section {
-  padding: 90px 64px;
-  background: #fff;
-  margin-bottom: 14px;
-}
-.section h2 {
-  font-size: 36px;
-  color: #003366;
-  margin-bottom: 24px;
-}
-.section p {
-  font-size: 17px;
-  line-height: 1.9;
-}
-
-/* Flex */
-.flex {
-  display: flex;
-  gap: 50px;
-  flex-wrap: wrap;
-}
-.flex img {
-  width: 480px;
-  border-radius: 14px;
-}
-
-/* Grid for images */
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 28px;
-}
-.image-grid img {
-  width: 100%;
-  border-radius: 14px;
-}
-
-/* Stats */
-.stats {
-  background: #003366;
-  color: #fff;
-  padding: 80px 64px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  text-align: center;
-  gap: 32px;
-}
-.stat h3 {
-  font-size: 40px;
-  margin: 0;
-  color: #ffb703;
-}
-
-/* Card Grid */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 32px;
-}
-.card {
-  background: #eef3f9;
-  padding: 28px;
-  border-radius: 14px;
-}
-
-/* Social */
-.social {
-  display: flex;
-  justify-content: center;
-  gap: 28px;
-  margin-top: 30px;
-}
-.social a {
-  text-decoration: none;
-  background: #0059b3;
-  color: white;
-  font-size: 20px;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-}
-
-/* Footer */
-footer {
-  background: #001f3f;
-  color: white;
-  padding: 50px 64px;
-}
-footer a {
-  color: #ffb703;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 8px;
-}
-.footer-bottom {
-  text-align: center;
-  margin-top: 36px;
-  font-size: 14px;
-}
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, sans-serif; background: #f4f6f8; color: #333; }
+  header { background: #002b5c; color: white; padding: 20px 40px; }
+  header h1 { font-size: 32px; }
+  nav { margin-top: 8px; }
+  nav a { color: white; margin-right: 20px; text-decoration: none; font-weight: bold; }
+  .hero { background: url('https://images.unsplash.com/photo-1509395176047-4a54a1609f94') center/cover no-repeat; color: white; padding: 150px 40px; text-align: center; }
+  .hero h2 { font-size: 48px; }
+  .hero p { font-size: 20px; max-width: 700px; margin: 20px auto; }
+  section { padding: 60px 40px; }
+  .flex { display: flex; gap: 40px; flex-wrap: wrap; }
+  .flex img { width: 480px; border-radius: 10px; }
+  .stats { display: flex; gap: 30px; justify-content: space-around; background: #002b5c; color: white; padding: 60px 40px; }
+  .stats div { text-align: center; }
+  .stats h3 { font-size: 36px; color: #ffb703; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap: 30px; }
+  .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+  footer { background: #001a3c; color: white; padding: 40px; text-align: center; }
+  footer a { color: #ffb703; text-decoration: none; }
 </style>
-
 </head>
 <body>
 
 <header>
-  <h1>Enmark Energy Private Limited</h1>
+  <h1>Enmark Power Private Limited</h1>
   <nav>
     <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Solutions</a>
-    <a href="#">Projects</a>
-    <a href="#">Contact</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
-<!-- HERO -->
 <section class="hero">
-  <h2>Engineering Next-Gen Energy & Power Solutions for India’s Growth</h2>
+  <h2>Powering Tomorrow’s Industries</h2>
   <p>
-    Enmark Energy Private Limited is a dynamic power engineering company delivering
-    efficient and resilient electrical infrastructure solutions tailored for modern
-    industries and sustainable development.:contentReference[oaicite:1]{index=1}
+    Enmark Power delivers cutting‑edge electrical solutions and power equipment that drive
+    industrial growth. We combine innovation with reliability to power your success. :contentReference[oaicite:2]{index=2}
   </p>
 </section>
 
-<!-- ABOUT -->
-<section class="section">
-  <h2>About Enmark Energy</h2>
+<section id="about">
+  <h2>About Enmark Power</h2>
   <div class="flex">
-    <img src="https://images.unsplash.com/photo-1521790945508-bf2a36314e85" alt="Power systems">
+    <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc" alt="Industrial infrastructure">
     <p>
-      Incorporated in 2019 in Tamil Nadu, India, Enmark Energy is an active, privately
-      held company committed to advancing electrical systems and power distribution
-      technologies. With a foundation rooted in technical excellence and quality
-      execution, the company supports industrial projects, commercial power solutions,
-      and resilient infrastructure development.:contentReference[oaicite:2]{index=2}
+      Enmark Power Private Limited is a Chennai‑based electrical solutions company incorporated
+      in 2023. Registered with the Registrar of Companies, Chennai under CIN U26109TN2023PTC162673,
+      we specialize in manufacturing and supplying high‑quality power equipment. :contentReference[oaicite:3]{index=3}
       <br><br>
-      Our goal is to deliver robust, future-ready power systems that improve operational
-      performance, enhance reliability, and foster sustainability across sectors.
-    </p>
+      Our team of expert engineers delivers world‑class solutions tailored to industrial and
+      commercial needs with quality, safety, and long‑term reliability built into every product.
   </div>
 </section>
 
-<!-- IMAGE SHOWCASE -->
-<section class="section">
-  <h2>Engineering in Action</h2>
-  <div class="image-grid">
-    <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc" alt="Industrial power site">
-    <img src="https://images.unsplash.com/photo-1509395176047-4a54a1609f94" alt="Electrical infrastructure">
-    <img src="https://images.unsplash.com/photo-1573497491208-6b1acb260507" alt="Energy planning">
-    <img src="https://images.unsplash.com/photo-1581092919535-7146c6b9b8b1" alt="Power control systems">
-  </div>
-</section>
-
-<!-- STATS -->
 <section class="stats">
-  <div class="stat"><h3>150+</h3><p>Energy & Power Projects</p></div>
-  <div class="stat"><h3>5+</h3><p>Engineering Domains Covered</p></div>
-  <div class="stat"><h3>24/7</h3><p>Technical Support & Services</p></div>
-  <div class="stat"><h3>99.9%</h3><p>System Dependability</p></div>
+  <div><h3>25+</h3><p>Projects Delivered</p></div>
+  <div><h3>15+</h3><p>Expert Engineers</p></div>
+  <div><h3>99.9%</h3><p>Uptime Guarantee</p></div>
+  <div><h3>24/7</h3><p>Technical Support</p></div>
 </section>
 
-<!-- SOLUTIONS -->
-<section class="section">
-  <h2>Innovative Power Solutions</h2>
+<section id="products">
+  <h2>Our Products</h2>
   <div class="grid">
-    <div class="card">
-      <h3>Electrical Distribution Architecture</h3>
-      <p>
-        End-to-end power network design for industrial, commercial and infrastructure sectors.
-      </p>
-    </div>
-    <div class="card">
-      <h3>Control & Protection Systems</h3>
-      <p>
-        Intelligent system integration and automation for optimized operational safety.
-      </p>
-    </div>
-    <div class="card">
-      <h3>Installation & Commissioning</h3>
-      <p>
-        Professional installation, testing and launch protocols for dependable performance.
-      </p>
-    </div>
-    <div class="card">
-      <h3>Maintenance & Diagnostics</h3>
-      <p>
-        Predictive maintenance and diagnostic services for lowest downtime and cost.
-      </p>
-    </div>
+    <div class="card"><h3>Power Transformers</h3></div>
+    <div class="card"><h3>Distribution Panels</h3></div>
+    <div class="card"><h3>Industrial Switchgear</h3></div>
+    <div class="card"><h3>Control Systems</h3></div>
   </div>
 </section>
 
-<!-- INDUSTRIES -->
-<section class="section">
-  <h2>Industries We Empower</h2>
+<section id="services">
+  <h2>Our Services</h2>
   <div class="grid">
-    <div class="card">Industrial Manufacturing</div>
-    <div class="card">Commercial Facilities</div>
-    <div class="card">Healthcare & Data Centers</div>
-    <div class="card">Infrastructure & EPC Projects</div>
-    <div class="card">Smart Buildings</div>
+    <div class="card"><h3>Electrical Design</h3></div>
+    <div class="card"><h3>Installation Services</h3></div>
+    <div class="card"><h3>Maintenance & Support</h3></div>
+    <div class="card"><h3>24/7 Technical Assistance</h3></div>
   </div>
 </section>
 
-<!-- SOCIAL -->
-<section class="section">
-  <h2>Connect With Us</h2>
-  <p style="text-align:center; max-width:800px; margin:auto;">
-    Follow Enmark Energy on social media for latest insights, project highlights, and
-    engineering innovations.
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>
+    Call: +91 44 2625 1234 / +91 98401 12345<br>
+    Email: info@enmarkpower.com<br>
+    Address: No 4, Dr. Ambedkar Street, Korattur, Chennai – 600080, Tamil Nadu, India :contentReference[oaicite:4]{index=4}
   </p>
-  <div class="social">
-    <a href="#" title="LinkedIn">in</a>
-    <a href="#" title="Facebook">f</a>
-    <a href="#" title="Twitter">X</a>
-    <a href="#" title="Instagram">📷</a>
-    <a href="#" title="YouTube">▶</a>
-  </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <h3>Contact</h3>
-  <p>📍 Kallikuppam, Ambattur, Chennai, Tamil Nadu, India</p>
-  <p>✉ natarajan@secutech.co.in</p>
-  <p>📞 +91 XXXXX XXXXX</p>
-
-  <div class="footer-bottom">
-    © 2026 Enmark Energy Private Limited. All Rights Reserved.
-  </div>
+  <p>
+    © 2026 Enmark Power Private Limited. All rights reserved.<br>
+    CIN: U26109TN2023PTC162673 | Made in India :contentReference[oaicite:5]{index=5}
+  </p>
 </footer>
 
 </body>
 </html>
+
  
- 
+
 

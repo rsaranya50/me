@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enmark Power Private Limited</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Segoe UI",Arial,sans-serif;
+  background:#f4f7fb;
+  color:#333;
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(120deg,#001833,#003f7f);
+  color:#fff;
+  padding:28px 80px;
+}
+header h1{margin:0;font-size:36px}
+nav{margin-top:14px}
+nav a{
+  color:#fff;
+  text-decoration:none;
+  margin-right:26px;
+  font-weight:600;
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+  url("https://images.unsplash.com/photo-1541877944-ac82a091518a") center/cover no-repeat;
+  padding:180px 80px;
+  color:white;
+}
+.hero h2{font-size:52px;max-width:900px}
+.hero p{
+  font-size:22px;
+  max-width:850px;
+  line-height:1.9;
+  margin-top:25px;
+}
+
+/* SECTION */
+.section{
+  padding:100px 80px;
+  background:#fff;
+  margin-bottom:14px;
+}
+.section h2{
+  font-size:38px;
+  color:#001833;
+  margin-bottom:30px;
+}
+.section p{
+  font-size:17px;
+  line-height:1.9;
+}
+
+/* FLEX */
+.flex{
+  display:flex;
+  gap:60px;
+  flex-wrap:wrap;
+}
+.flex img{
+  width:500px;
+  border-radius:16px;
+}
+
+/* IMAGE GRID */
+.image-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+.image-grid img{
+  width:100%;
+  border-radius:14px;
+}
+
+/* STATS */
+.stats{
+  background:#001833;
+  color:#fff;
+  padding:90px 80px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  text-align:center;
+  gap:35px;
+}
+.stat h3{
+  font-size:44px;
+  margin:0;
+  color:#ffb703;
+}
+
+/* CARD GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:35px;
+}
+.card{
+  background:#f1f5fb;
+  padding:34px;
+  border-radius:16px;
+}
+
+/* DARK */
+.dark{
+  background:#eaf1fb;
+}
+
+/* SOCIAL */
+.social{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  margin-top:35px;
+}
+.social a{
+  text-decoration:none;
+  background:#003f7f;
+  color:white;
+  padding:16px 20px;
+  border-radius:50%;
+  font-size:18px;
+}
+
+/* CTA */
+.cta{
+  background:linear-gradient(120deg,#003f7f,#001833);
+  color:#fff;
+  text-align:center;
+  padding:130px 40px;
+}
+.cta h2{font-size:44px}
+
+/* FOOTER */
+footer{
+  background:#000f1f;
+  color:white;
+  padding:70px 80px;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:45px;
+}
+footer a{
+  color:#ffb703;
+  text-decoration:none;
+  display:block;
+  margin-bottom:10px;
+}
+.footer-bottom{
+  margin-top:50px;
+  text-align:center;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Enmark Power Private Limited</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Industries</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+<h2>Engineering Reliable Electrical & Power Infrastructure for Modern Industries</h2>
+<p>
+Enmark Power Private Limited is committed to designing, delivering, and maintaining
+high-performance electrical systems that power industrial growth, infrastructure
+development, and sustainable operations across India.
+</p>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+<h2>Who We Are</h2>
+<div class="flex">
+<img src="https://images.unsplash.com/photo-1584277261846-c6a1672ed979">
+<p>
+Enmark Power Private Limited is a professionally driven power engineering company
+specializing in electrical panels, power distribution systems, installation,
+commissioning, and long-term maintenance services.
+<br><br>
+Our approach combines advanced engineering practices, strict safety standards,
+and customer-centric execution to ensure reliable, efficient, and scalable power
+solutions for diverse industrial and commercial applications.
+</p>
+</div>
+</section>
+
+<!-- IMAGE SHOWCASE -->
+<section class="section dark">
+<h2>Our Engineering Environment</h2>
+<div class="image-grid">
+<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc">
+<img src="https://images.unsplash.com/photo-1581092919535-7146c6b9b8b1">
+<img src="https://images.unsplash.com/photo-1509395176047-4a54a1609f94">
+<img src="https://images.unsplash.com/photo-1581093458791-9a0b4b55f64d">
+</div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+<div class="stat"><h3>250+</h3><p>Projects Successfully Delivered</p></div>
+<div class="stat"><h3>18+</h3><p>Years of Engineering Expertise</p></div>
+<div class="stat"><h3>70+</h3><p>Trusted Industrial Clients</p></div>
+<div class="stat"><h3>99.9%</h3><p>Operational Reliability</p></div>
+</section>
+
+<!-- SERVICES -->
+<section class="section">
+<h2>Comprehensive Power Solutions</h2>
+<div class="grid">
+<div class="card">
+<h3>Electrical Panels (LT & HT)</h3>
+<p>
+Design and manufacturing of robust electrical panels compliant with
+industry regulations and safety standards.
+</p>
+</div>
+
+<div class="card">
+<h3>Power Distribution Systems</h3>
+<p>
+End-to-end power distribution architecture ensuring stable and
+uninterrupted electrical supply.
+</p>
+</div>
+
+<div class="card">
+<h3>Installation & Commissioning</h3>
+<p>
+Precision-driven execution, testing, and commissioning for optimal
+system performance.
+</p>
+</div>
+
+<div class="card">
+<h3>Maintenance & AMC Services</h3>
+<p>
+Preventive and corrective maintenance programs to maximize uptime
+and asset life.
+</p>
+</div>
+</div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="section dark">
+<h2>Industries We Empower</h2>
+<div class="grid">
+<div class="card">Manufacturing & Process Industries</div>
+<div class="card">Infrastructure & EPC Projects</div>
+<div class="card">Commercial & IT Facilities</div>
+<div class="card">Energy & Utility Providers</div>
+<div class="card">Warehousing & Logistics</div>
+<div class="card">Data Centers & Critical Facilities</div>
+</div>
+</section>
+
+<!-- SUSTAINABILITY -->
+<section class="section">
+<h2>Sustainability & Responsible Engineering</h2>
+<div class="flex">
+<p>
+At Enmark Power, sustainability is integrated into every project.
+We design systems that reduce energy losses, improve efficiency,
+support renewable integration, and comply with national and
+international electrical standards.
+<br><br>
+Our commitment ensures safer operations, lower environmental impact,
+and long-term value for our clients.
+</p>
+<img src="https://images.unsplash.com/photo-1509395176047-4a54a1609f94">
+</div>
+</section>
+
+<!-- SOCIAL -->
+<section class="section dark">
+<h2>Connect With Enmark Power</h2>
+<p style="text-align:center;max-width:850px;margin:auto">
+Follow us on social media to stay updated on our latest projects,
+technical innovations, and industry insights.
+</p>
+<div class="social">
+<a href="#">in</a>
+<a href="#">f</a>
+<a href="#">X</a>
+<a href="#">📷</a>
+<a href="#">▶</a>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+<h2>Partner With a Trusted Power Engineering Team</h2>
+<p>
+Let Enmark Power help you build reliable, efficient, and future-ready
+electrical infrastructure.
+</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="footer-grid">
+<div>
+<h3>Enmark Power</h3>
+<p>Engineering dependable power solutions for modern industries.</p>
+</div>
+
+<div>
+<h3>Quick Links</h3>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</div>
+
+<div>
+<h3>Contact</h3>
+<p>📍 Chennai, Tamil Nadu, India</p>
+<p>✉ info@enmarkpower.com</p>
+<p>📞 +91 XXXXX XXXXX</p>
+</div>
+
+<div>
+<h3>Social Media</h3>
+<a href="#">LinkedIn</a>
+<a href="#">Facebook</a>
+<a href="#">Instagram</a>
+<a href="#">YouTube</a>
+</div>
+</div>
+
+<div class="footer-bottom">
+© 2026 Enmark Power Private Limited. All Rights Reserved.
+</div>
+</footer>
+
+</body>
+</html>
